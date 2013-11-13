@@ -287,7 +287,7 @@ public class scrPassenger : MonoBehaviour {
         GameObject pad = GameObject.Find(strLocationName);
         if (pad == null)
         {
-            Debug.LogError("No pad for location " + strLocationName);
+            //Debug.LogError("No pad for location " + strLocationName);
         }
         else
         {

@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_scripts\scrDashBoardCam.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_scripts\scrMainCam.cs">
     <Files>
-      <File FileName="Assets\_scripts\scrDashBoardCam.cs" Line="56" Column="55" />
+      <File FileName="Assets\_scripts\scrMainCam.cs" Line="91" Column="1" />
+      <File FileName="Assets\_scripts\scrTaxiDriver.cs" Line="98" Column="2" />
+      <File FileName="Assets\_scripts\scrTaxiController.cs" Line="88" Column="59" />
+      <File FileName="Assets\_scripts\clsGameConstants.cs" Line="66" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
