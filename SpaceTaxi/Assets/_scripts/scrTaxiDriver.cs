@@ -4,7 +4,9 @@ using System.Collections;
 public class scrTaxiDriver : MonoBehaviour {
     public static scrTaxiDriver Instance;
 
-
+	/// <summary>
+	/// states.
+	/// </summary>
     public enum enStates
     {
         flying,
@@ -36,7 +38,10 @@ public class scrTaxiDriver : MonoBehaviour {
 
     public scrPassenger psngrScript = null;
     private GameObject objTaxiTop;
-
+	
+	/// <summary>
+	/// Awake this instance.
+	/// </summary>
     void Awake()
     {
         objTaxiTop = GameObject.Find("taxiTop");
@@ -51,7 +56,10 @@ public class scrTaxiDriver : MonoBehaviour {
         SetTaxiSign(true);
 
     }
-	// Use this for initialization
+	
+	/// <summary>
+	/// Start this instance.
+	/// </summary>
 	void Start () {
         psngrScript = scrPassenger.Instance;
 	}
@@ -185,8 +193,8 @@ public class scrTaxiDriver : MonoBehaviour {
     /// <param name="collision"></param>
     public void inflictDamage(float fltDamageToInflict)
     {
-        //TODO: use collision object to determine the part of the tank that was damaged
-        //draw burn marks on the tanks texture.
+        //TODO: use collision object to determine the part of the taxi that was damaged
+        //draw burn marks on the texture.
 
         fltDamage += fltDamageToInflict;
         setSmoke();

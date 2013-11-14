@@ -64,6 +64,7 @@
      <Compile Include="Assets\_scripts\clsUIInfo.cs" />
      <Compile Include="Assets\_scripts\scrDashBoard.cs" />
      <Compile Include="Assets\_scripts\scrDashBoardCam.cs" />
+     <Compile Include="Assets\_scripts\scrDebugSlate.cs" />
      <Compile Include="Assets\_scripts\scrGameOver.cs" />
      <Compile Include="Assets\_scripts\scrMainCam.cs" />
      <Compile Include="Assets\_scripts\scrMainCamPointAtPlayer.cs" />

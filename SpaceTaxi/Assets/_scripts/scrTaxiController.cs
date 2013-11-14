@@ -102,9 +102,12 @@ public class scrTaxiController : MonoBehaviour {
         }
 
         objLandingGear.SetActive(blnGearDown);
-
-        float fltCamHor = Input.GetAxis(clsGameConstants.strHorizontalRightAxis);
-        float fltCamVert = Input.GetAxis(clsGameConstants.strVerticalRightAxis);
+		
+		
+		//This is for the non-Oculus version.
+		//Get user imput to rotate the camera arount the outside of the taxi
+        //float fltCamHor = Input.GetAxis(clsGameConstants.strHorizontalRightAxis);
+        //float fltCamVert = Input.GetAxis(clsGameConstants.strVerticalRightAxis);
 
         //objMainCam.fltLong += fltCamHor * Time.deltaTime;
         //objMainCam.fltLat += fltCamVert * Time.deltaTime;
