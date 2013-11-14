@@ -352,7 +352,7 @@ public class scrPassenger : MonoBehaviour {
             }
             else
             {
-                SetPassengerMessage("Hey! Taxi");
+                SetPassengerMessage("Hey, Taxi!");
                 soundManager.PlayClip(scrSoundManager.Clip.HeyTaxi, false);
             }
         }    

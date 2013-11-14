@@ -2,7 +2,8 @@ using UnityEngine;
 using System.Collections;
 
 public class scrTaxiController : MonoBehaviour {
-
+	
+	public static scrTaxiController Instance;
     public float fltRotate = 0;
     public float fltMove = 0;
     public float fltLift = 0;
@@ -26,6 +27,7 @@ public class scrTaxiController : MonoBehaviour {
     /// </summary>
     void Awake()
     {
+		scrTaxiController.Instance = this;
         objLandingGear = GameObject.Find("LandingGear");
 
         fltMoveForce = 1000;
