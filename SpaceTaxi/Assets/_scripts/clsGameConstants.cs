@@ -57,6 +57,7 @@ public class clsGameConstants {
     public const string strLevel001 = "Level001";
     public const string strLevel002 = "Level002";
     public const string strLevel003 = "Level003";
+    public const string strLevelRift = "LevelRift";
     public const string strFinalScene = "FinalScene";
     public const string strLevelComplete = "LevelComplete";
     public const string strGameOver = "GameOver";

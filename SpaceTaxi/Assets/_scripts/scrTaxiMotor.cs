@@ -58,6 +58,9 @@ public class scrTaxiMotor : MonoBehaviour {
         //make sure we didnt fall through the floor
         if (this.transform.position.y < 0) this.transform.Translate(Vector3.up * -this.transform.position.y);
 
+        //if the player isn't touching the control, then exit
+        if (fltMove == 0 && fltRotate == 0 & fltLift == 0) return;
+
         //turn thrusters on and off
         FireThruster(fltMove, fltRotate, fltLift, taxiDriverScript.fltFuel);
 
@@ -75,7 +78,7 @@ public class scrTaxiMotor : MonoBehaviour {
             //the player can only control horizontal movement when the gear is up
             if (blnGearDown == false)
             {
-                //rotate the tank around its Y axis
+                //rotate around its Y axis
                 if (this.rigidbody.angularVelocity.magnitude < fltMaxAngularVelocity)
                     this.rigidbody.AddTorque(0, fltRotate * fltRotateForce * Time.deltaTime, 0);
 
@@ -85,6 +88,8 @@ public class scrTaxiMotor : MonoBehaviour {
 
             this.rigidbody.AddForce(this.rigidbody.transform.up * fltLift * fltMoveForce * Time.deltaTime);
 
+            Debug.Log("flying " + fltMove.ToString() + " " + fltRotate.ToString() + fltLift.ToString());
+           
             taxiDriverScript.state = scrTaxiDriver.enStates.flying;
             taxiDriverScript.location = clsGameConstants.enLocations.InTransit;
 

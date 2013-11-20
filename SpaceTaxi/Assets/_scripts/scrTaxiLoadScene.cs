@@ -131,21 +131,24 @@ public class scrTaxiLoadScene : MonoBehaviour {
     {
         string strNextLevel = "";
 
-        switch (strLevel)
-        {
-            case clsGameConstants.strLevel001:
-                 strNextLevel = clsGameConstants.strLevel002;
-                break;
-            case clsGameConstants.strLevel002:
-                strNextLevel = clsGameConstants.strLevel003;
-                break;
-            case clsGameConstants.strLevel003:
-                strNextLevel = clsGameConstants.strLevel001;
-                break;
-            default:
-                strNextLevel = clsGameConstants.strLevel001;
-                break;
-        }
+        //for now, we will just play the Oculus Rift level over and over
+        strNextLevel = clsGameConstants.strLevelRift;
+
+        //switch (strLevel)
+        //{
+        //    case clsGameConstants.strLevel001:
+        //         strNextLevel = clsGameConstants.strLevel002;
+        //        break;
+        //    case clsGameConstants.strLevel002:
+        //        strNextLevel = clsGameConstants.strLevel003;
+        //        break;
+        //    case clsGameConstants.strLevel003:
+        //        strNextLevel = clsGameConstants.strLevel001;
+        //        break;
+        //    default:
+        //        strNextLevel = clsGameConstants.strLevel001;
+        //        break;
+        //}
 
 
         return strNextLevel;

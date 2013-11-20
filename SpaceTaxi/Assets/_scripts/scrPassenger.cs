@@ -52,6 +52,8 @@ public class scrPassenger : MonoBehaviour {
         fare = new clsFare();
 
         //load state from previous level
+        //in the future, this will be loaded dynamically.
+        //for now, we will just set the value here
         intAvailableDestinations = 4;
 
         destinationQueue = new Queue<clsGameConstants.enLocations>();
