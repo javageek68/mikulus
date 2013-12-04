@@ -52,6 +52,7 @@
      <Compile Include="Assets\OVR\Editor\OVREditorGUIUtility.cs" />
      <Compile Include="Assets\OVR\Editor\OVRPlayerControllerEditor.cs" />
      <Compile Include="Assets\OVR\Editor\OVRPrefabs.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\_docs\StartProcess.txt" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
