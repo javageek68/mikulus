@@ -1,0 +1,33 @@
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [atiu9pag 8.14.1.6099]
+    Renderer: ATI Mobility Radeon HD 4250           
+    Vendor:   ATI
+    VRAM:     1083 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=0 RAWZ=0 NULL=0 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\XInputDotNetPure.dll (this message is harmless)
+Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\XInputDotNetPure.dll into Unity Child Domain
+- Completed reload, in  0.080 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found.
+<RI> Input initialized.
+Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Superman\Superman_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 0.408297 ms
+NuiInitialize Failed.
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 11992.
+Total: 4.083440 ms (FindLiveObjects: 1.252889 ms CreateObjectMapping: 0.108257 ms MarkObjects: 1.989224 ms  DeleteObjects: 0.041529 ms)
+
