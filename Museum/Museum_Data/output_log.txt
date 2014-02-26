@@ -1,46 +1,45 @@
-Initialize engine version: 4.2.1f4 (4d30acc925c2)
+IIitnitialize engine vioersion:1 4.2.1f4 (4d30acc9
+25c2)
 GfxDevice: creating device client; threaded=1
-Direct3D:
+
+DDirect3D:
+
     Version:  Direct3D 9.0c [atiu9pag 8.14.1.6099]
+
     Renderer: ATI Mobility Radeon HD 4250           
+
     Vendor:   ATI
+
     VRAM:     1083 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 DF24=1 INTZ=0 RAWZ=0 NULL=0 RESZ=1 SlowINTZ=1
+
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 DF24=1 INTZ=0 RAWW=0=0 NULL=0 RESZ=1 SlowINTZ=
+1
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-- Completed reload, in 10.080 seconds
-desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
-<RI> Initializing input.
-XInput1_3.dll not found.
-<RI> Input initialized.
-Initialize engine version: 4.2.1f4 (4d30acc925c2)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 9.0c [atiu9pag 8.14.1.6099]
-    Renderer: ATI Mobility Radeon HD 4250           
-    Vendor:   ATI
-    VRAM:     1083 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 DF24=1 INTZ=0 RAWZ=0 NULL=0 RESZ=1 SlowINTZ=1
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-- Completed reload, in  0.077 seconds
-desktop: 1280x800 60Hz; virtual: 1280x800 at 0,0
-<RI> Initializing input.
-XInput1_3.dll not found.
-<RI> Input initialized.
+PPalform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\UnityEngine.dll (this message is harmless)
+s)L
+oading C:\Users\mi\mkke\DDcuments\Progs\UnityProjojects\Mikulus\Museum\Museum_Data\ManagednityEnygngine.dllinto Unity Child Domain
+n
+PPalatformssembly: C:\Users\ms\mike\cuments\Progs\UnityProjecProjMects\Mikulus\\Museum_Museum_Data\Managed\Assembly-CSharp-firstpass.dll (this message is har
+mlessLo
+adingLoading s\mike\Documen\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child
+ Domain
+PlatfPrm assembly: C:\Uy: C:\Usee\Documents\Progs\UnityProjecyProjects\Mikulus\Museum\Museu\Managed\AssemblAssembly-CSharp.dll m(this meis harmlessarm
+less)
+Loading ading C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-CSharp.dll into Unity Child Do
+main
+PPatform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Ma\ManagAssembly-UnityScript-firstpass.dll (this messmege is harmless)
+ss)
+LoaLoadin:\ C:\Users\mike\Docume\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\Assembly-UnityScript-fit-firstpassl into Uo Unity C Chhild omain
+Domain
+- Complete- re Complete 4. 7reload, in
+  4.479 seconds
+desktop: 1280x800d sk60Hz; virtua0 : 1280x800 at 0,028
+0x800 at 0,0
+<RI> Initi<lizingIninput.
+ing input.
+XInpuX1_3.dll _3.t found.
+found.
+<RRI>  Inpuut initialized.
+
 Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\Users\mike\Documents\Progs\UnityProjects\Mikulus\Museum\Museum_Data\Managed\System.Core.dll (this message is harmless)
