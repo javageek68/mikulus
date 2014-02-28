@@ -22,7 +22,7 @@ public class scrGameContorller : MonoBehaviour
     private Kinect.KinectInterface kinect;
     private int intLineSize = 21;
     private KinectModelControllerV2 kinectCtlr = null;
-    private Vector3 vCtlDir;
+    private Vector3 vRightFist;
     private float fltVertical = 0;
     private float fltHorizontal = 0;
     private float fltSpeed = 0;
@@ -44,31 +44,39 @@ public class scrGameContorller : MonoBehaviour
         //determine if the Kinect is tracking
         blnTrackingOn = IsTrackingOn();
 
-        vCtlDir = kinectCtlr.Hand_Right.transform.position - kinectCtlr.Head.transform.position ;
-        fltSpeed = vCtlDir.magnitude;
-        //square the speed
-        fltSpeed = fltSpeed * fltSpeed;
+        //use the distance the right fist is from the face to control speed
+        vRightFist = kinectCtlr.Hand_Right.transform.position - kinectCtlr.Head.transform.position ;
 
+        //speed is the vector magnitude 
+        fltSpeed = Mathf.Pow(vRightFist.magnitude, 3);
+        
+        //Use the Rift orientation for turning
         OVRDevice.GetOrientation(ref qOrientation);
 
+        //Seperate the rotations so we can scale them independently
+        //Climbing
         fltVertical = qOrientation.x;
+        //Banking
         fltHorizontal = -qOrientation.z;
 
-        //kinect.getSkeleton().SkeletonData
-
+        //Check to see if the Kinect has started tracking yet
         if (blnTrackingOn)
         {
-            //start the theme music if it hasnt started yet.
+            //Set all first time things
             if (audThemeMusic.isPlaying == false)
             {
+                //start the game timer
                 fltGameStart = Time.timeSinceLevelLoad;
+                //start the background music
                 audThemeMusic.Play();
+                //reset the Rift orientation
+                OVRDevice.ResetOrientation(0);
             }
 
             //Calculate the time the player has left
             fltTime = fltTotalGameTime - Time.timeSinceLevelLoad + fltGameStart;
 
-            if (fltTime < 0) Application.LoadLevel(clsGameConstants.strMainMenu);
+            //if (fltTime < 0) Application.LoadLevel(clsGameConstants.strMainMenu);
 
             //rotate
             trnSuperMan.Rotate(Vector3.up, fltHorizontal * fltTurnSpeed * Time.deltaTime);
@@ -76,6 +84,18 @@ public class scrGameContorller : MonoBehaviour
             //move forward
             trnSuperMan.position += trnSuperMan.forward * fltSpeed * fltForwardSpeed * Time.deltaTime;
         }
+
+        //Space bar resets orientation
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OVRDevice.ResetOrientation(0);
+        }
+        //Return key goes back to main menu
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Application.LoadLevel(clsGameConstants.strMainMenu);
+        }
+
 	}
 
     /// <summary>
@@ -98,8 +118,8 @@ public class scrGameContorller : MonoBehaviour
         GUI.Label(new Rect(0, intLineSize * 2, Screen.width, intLineSize), "left   hand     " + kinectCtlr.Hand_Left.transform.position.ToString());
         GUI.Label(new Rect(0, intLineSize * 3, Screen.width, intLineSize), "right  hand     " + kinectCtlr.Hand_Right.transform.position.ToString());
 
-        GUI.Label(new Rect(0, intLineSize * 4, Screen.width, intLineSize), "ctrl vct   " + vCtlDir.ToString());
-        GUI.Label(new Rect(0, intLineSize * 5, Screen.width, intLineSize), "ctrl mag   " + vCtlDir.magnitude.ToString());
+        GUI.Label(new Rect(0, intLineSize * 4, Screen.width, intLineSize), "ctrl vct   " + vRightFist.ToString());
+        GUI.Label(new Rect(0, intLineSize * 5, Screen.width, intLineSize), "ctrl mag   " + vRightFist.magnitude.ToString());
         GUI.Label(new Rect(0, intLineSize * 6, Screen.width, intLineSize), "horz " + fltHorizontal.ToString("###.##"));
         GUI.Label(new Rect(0, intLineSize * 7, Screen.width, intLineSize), "vert " + fltVertical.ToString("###.##"));
         GUI.Label(new Rect(0, intLineSize * 8, Screen.width, intLineSize), "speed " + fltSpeed.ToString("###.##"));
